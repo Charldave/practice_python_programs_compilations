@@ -4,3 +4,7 @@ if num_1>num_2:
     print(f"The bigger number is {num_1}")
 elif num_1<num_2:
     print(f'the bigger number is {num_2}')
+elif num_1==num_2:
+    print("both number are equal")
+else:
+    print('Please input a valid number')
