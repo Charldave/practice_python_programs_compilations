@@ -6,3 +6,5 @@ if num_1>num_2:
     print(f'{num_2} is smaller')
 elif num_1<num_2:
     print(f'{num_1} is smaller')
+elif num_1==num_2:
+    print("Both are equal")
