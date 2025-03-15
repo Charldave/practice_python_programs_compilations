@@ -10,4 +10,8 @@ while True:
     except ValueError:
         print('invalid')
         break
-#print result
+#setting output condition
+if highest_num is not None:
+    print(f'the highest number is {highest_num}')#print highest result
+else:
+    print('no valid numbers')
