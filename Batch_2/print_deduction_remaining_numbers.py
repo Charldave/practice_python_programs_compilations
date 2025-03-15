@@ -6,4 +6,7 @@ for count in range (0, 10):
 #append input to list
     list.append(num)
 #subtract input
-#print result
+first_num=list[0]
+for num in list[1:]:
+    first_num-=num
+    print(f'{first_num}')#result
