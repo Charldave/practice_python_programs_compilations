@@ -1,15 +1,12 @@
-#create list 
+#set list=None
+lowest_number=None
 #while True loop
-    #try
-        #display enter num
+while True:
+    try:
         #ask user input
-
-        #if list is none or input<list
-            #lowest=input
-
-    #except ValueError
-        #display invalid
-        #break
-
-        #if list not None display list
-        #else display no lowest num
+        num=int(input('Enter a number: '))
+        if lowest_number is None or num<lowest_number:
+            lowest_number=num#updates value
+    except ValueError:
+        print('invalid input.')
+        break
