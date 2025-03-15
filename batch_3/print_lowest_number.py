@@ -10,3 +10,8 @@ while True:
     except ValueError:
         print('invalid input.')
         break
+#determines the lowest or no lowest
+if lowest_number is not None:
+    print(f'{lowest_number} is the lowest')
+else:
+    print('no lowest number')
