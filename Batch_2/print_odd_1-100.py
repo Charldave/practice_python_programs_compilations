@@ -1,6 +1,9 @@
-#Create a program that print all the odd numbers starting from 0 to 100. (Use while loop)
 #set variable for odd
+odd_numbers=0
 #use while loop <=100
+while odd_numbers<=100:
 #odd number +1
-#if #2!=0
-#print odd number
+    odd_numbers+=1
+#if %2!=0
+    if odd_numbers%2!=0:
+        print(odd_numbers)
