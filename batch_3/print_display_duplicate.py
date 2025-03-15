@@ -11,7 +11,7 @@ duplicated=[]
 #for num in list
 for num in list:
     #if .count num>1
-    if list.count(num)>1:
+    if list.count(num) > 1 and num not in duplicated:
         duplicated.append(num)
 #print result
 print(f'duplicate numbers {duplicated}')
