@@ -1,6 +1,8 @@
 #set even count=0
+even_count=0
 #for loop range 10
-#ask for inputs
+for count in range (0, 10):
+    num=float(input(f'Enter number {count+1}: '))#ask inputs
 #if %2==0
 #even count+=1
 #print even count
