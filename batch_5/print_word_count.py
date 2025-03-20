@@ -1,3 +1,3 @@
-#display ask user inputs 
-#input.split()
-#print len(input)
+sentence = input('Enter a complete sentence: ')
+word_count = sentence.split()
+print(len(word_count))
