@@ -1,3 +1,2 @@
-#display ask user to input 1-1000 
-#input.zfill()
-#.zfill(6)
+number = (input("Enter your 1-1000 numbers: "))
+print(number.zfill(6))
