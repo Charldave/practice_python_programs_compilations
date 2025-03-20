@@ -1,3 +1,3 @@
-#display ask user inputs
-#input = input.lower().replace(" ", "_")
-#print(input)
+name = input('Enter your full name in incorrect casing: ')
+name = name.lower().replace(" ", "_")
+print(name)
