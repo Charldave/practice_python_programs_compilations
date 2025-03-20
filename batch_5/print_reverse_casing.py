@@ -1,2 +1,2 @@
-#display ask user inputs
-#print input.swapcase()
+name = input('Enter your full name in incorrect casing: ')
+print(name.swapcase())
