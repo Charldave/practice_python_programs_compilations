@@ -1,2 +1,2 @@
-#display ask user input
-#print input.title()
+name = input('Enter your full name in incorrect casing: ')
+print(name.title())
