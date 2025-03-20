@@ -1,2 +1,2 @@
-#display ask user input
-#print input.lower()
+name = input('Enter your full name: ')
+print(name.lower())
