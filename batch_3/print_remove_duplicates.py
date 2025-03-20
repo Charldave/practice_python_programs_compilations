@@ -1,5 +1,5 @@
 #set list[]
-list=[]
+list = []
 #for loop range 10
 for count in range (0, 10):
     #input variabes, ask user
@@ -7,7 +7,7 @@ for count in range (0, 10):
     #append(input)
     list.append(num)
 #remove dupli list
-removed_dupli=[]
+removed_dupli = []
 
 print("no duplicates: ")
 for num in list:

@@ -1,8 +1,8 @@
 #create a list
-list=[]
+list = []
 while True:
     try:
-        num=float(input('Enter number: '))
+        num = float(input('Enter number: '))
         list.append(num)#append inputs
     except ValueError:
         print('Invalid input, proceeding to sort')

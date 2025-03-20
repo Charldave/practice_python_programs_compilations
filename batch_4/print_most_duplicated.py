@@ -1,9 +1,9 @@
 #create list
-list=[]
+list = []
 #while loop inputs
 while True:
     try:
-        num=float(input('Enter a number: '))
+        num = float(input('Enter a number: '))
         list.append(num)
 #no int input, display no valid number
     except ValueError:
