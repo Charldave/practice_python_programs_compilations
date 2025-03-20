@@ -1,2 +1,2 @@
-#display enter name for input
-#print(input.lstrip())
+name = input("Enter you full name: ")
+print(name.lstrip())
