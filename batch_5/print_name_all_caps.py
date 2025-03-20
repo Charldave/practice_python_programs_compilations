@@ -1,2 +1,2 @@
-#display ask user name inputs
-#print input.upper
+name = input("enter your name: ")
+print(name.upper())
