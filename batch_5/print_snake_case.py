@@ -1,3 +1,3 @@
 name = input('Enter your full name in incorrect casing: ')
-name = name.lower().lstrip().rstrip().replace(" ", "_")
+name = name.lower().strip().replace(" ", "_")
 print(name)
