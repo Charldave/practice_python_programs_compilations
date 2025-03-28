@@ -1,8 +1,11 @@
-#ask user for input
-#set index to 0
-#sor each character in input
-#   if character is the same as the first character
-#       increase index by 1
-#   else
-#       break
-#print the substring starting from the index
+user_input = input("Enter a string: ")
+
+prefix = user_input[0]
+index = 0
+
+while index < len(user_input) and user_input[index] == prefix:
+    index += 1
+
+result = user_input[index:]
+
+print(f"Result: {result}")
