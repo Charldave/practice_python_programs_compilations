@@ -1,8 +1,11 @@
-#ask user input
-#split the input into words
-#initialize a list for capitalized words
-#for each word in words
-    #capitalize first letter and lowercase the rest
-    #append to the list
-#join words into a string
-#print the result
+user_input = input("Enter a string: ")
+
+words = user_input.split()
+capped_words = []
+
+for word in words:
+    capped_word = word[0].upper() + word[1:].lower() if word else ''
+    capped_words.append(capped_word)
+
+result = ' '.join(capped_words)
+print(result)
