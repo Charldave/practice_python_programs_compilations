@@ -1,7 +1,11 @@
-#ask user input
-#spaces = 0
-#for loop i in input
-#   if i != ' '
-#   spaces += 1
-#index input
-#print
+user_input = input('Enter characters or words: ')
+spaces = 0
+
+for count in user_input:
+    if count != ' ':
+        break
+    spaces += 1
+
+no_space = user_input[spaces:]
+
+print(no_space)
