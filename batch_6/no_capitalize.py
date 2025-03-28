@@ -1,8 +1,7 @@
-#ask user input
-#check if input is not empty
-    #capitalize first letter using upper()
-    #convert remaining to lowercase using lower()
-    #combine and save to capped
-#else
-    #print "empty input"
-#print capped
+user_input = input("Enter a string: ")
+
+if user_input:
+    capped = user_input[0].upper() + user_input[1:].lower()
+    print(capped)
+else:
+    print("Empty input.")
