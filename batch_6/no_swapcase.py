@@ -1,10 +1,12 @@
-#ask user input
-#initialize empty swapped
-#for each case in input
-    #if case is uppercase
-        #convert to lowercase and add to swapped
-    #else if case is lowercase
-        #convert to uppercase and add to swapped
-    #else
-        #add case to swapped
-#print swapped
+user_input = input("Enter a string: ")
+swapped = ""
+
+for case in user_input:
+    if case.isupper():
+        swapped += case.lower()
+    elif case.islower():
+        swapped += case.upper()
+    else:
+        swapped += case
+
+print(swapped)
