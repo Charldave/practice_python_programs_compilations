@@ -1,5 +1,6 @@
-# ask user input for string
-# ask user input for ending to check
-# length = length of ending
-# check if last part matches ending
-# print result
+user_input = input("Enter a string: ")
+ends_with = input("Enter ending to check: ")
+
+length = len(ends_with)
+
+print(user_input[-length:] == ends_with)
