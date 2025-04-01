@@ -1,7 +1,6 @@
-#ask user input  
-#ask prefix input  
+user_input = input("Enter a string: ")
+starts_with = input("Enter prefix to check: ")
 
-#get len prefix  
+length = len(starts_with)
 
-#compare prefix with start of string
-#print result
+print(user_input[:length] == starts_with)
