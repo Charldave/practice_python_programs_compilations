@@ -1,11 +1,13 @@
-#ask user input
+user_input = input("Enter a string: ")
 
-#dictionary for lowercase to uppercase(a:A-z:Z)
+lower_to_upper = {'a': 'A', 'b': 'B', 'c': 'C', 'd': 'D', 'e': 'E', 'f': 'F','g': 'G', 'h': 'H', 'i': 'I', 'j': 'J', 'k': 'K', 'l': 'L','m': 'M', 'n': 'N', 'o': 'O', 'p': 'P', 'q': 'Q', 'r': 'R','s': 'S', 't': 'T', 'u': 'U', 'v': 'V', 'w': 'W', 'x': 'X','y': 'Y', 'z': 'Z'}
 
-#initialize empty string
+uppercase = ''
 
-#loop each character in user_input
-    #if character lower, convert uppercase add uppercase
-    #if not lower, add it uppercase
+for letter in user_input:
+    if letter in lower_to_upper:
+        uppercase += lower_to_upper[letter]
+    else:
+        uppercase += letter
 
-#print uppercase
+print(uppercase)
