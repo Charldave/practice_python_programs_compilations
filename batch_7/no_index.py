@@ -1,14 +1,14 @@
-#ask user input
-#ask user character to find
+user_input = input("Enter a string: ")
+string_find = input("Enter the character to find: ")
 
-#found_index = -1
+found_index = -1
 
-#for count in len(user input)
-    #if user input == character to find
-        #found_index = count
-        #break
+for count in range(len(user_input)):
+    if user_input[count] == string_find:
+        found_index = count
+        break
 
-#if found_index != -1
-    #print found_index
-#else
-    #print "not found"
+if found_index != -1:
+    print(found_index)
+else:
+    print("not found")
