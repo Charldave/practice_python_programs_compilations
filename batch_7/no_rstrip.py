@@ -7,4 +7,7 @@ for spaces in reversed(user_input):
     else:
         break
 
-print(user_input[:-trim_count])
+if trim_count > 0:
+    print(user_input[:-trim_count])
+else:
+    print(user_input)
