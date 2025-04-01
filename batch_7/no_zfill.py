@@ -1,10 +1,9 @@
-#ask user input
+user_input = input("Enter a string: ")
+width = int(input("Enter total width: "))
 
-#ask width
+zeros = width - len(user_input)
 
-#calculate zeros to add
-
-#if input < width
-    #add zeros
-    #print result
-#else, print the input
+if zeros > 0:
+    print('0' * zeros + user_input)
+else:
+    print(user_input)
