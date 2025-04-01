@@ -1,8 +1,10 @@
-#user input
-#trim_count = 0
-#loop the reversed input
-#  if current character is space
-#    trim_count +=
-#  else
-#    break
-#print input[:-trim_count]
+user_input = input('Enter a characters: ')
+
+trim_count = 0
+for spaces in reversed(user_input):
+    if spaces == ' ':
+        trim_count += 1
+    else:
+        break
+
+print(user_input[:-trim_count])
