@@ -1,1 +1,7 @@
 file_1 = open('file_1.txt', 'w')
+question = input('Enter question: ')
+choice_a = input('Enter choice "a": ')
+choice_b = input('Enter choice "b": ')
+choice_c = input('Enter choice "c": ')
+choice_d = input('Enter choice "d": ')
+answer = input('Ennter the correct answer: ') 
