@@ -7,8 +7,11 @@ while True:
     choice_b = input('Enter choice letter "b": ')
     choice_c = input('Enter choice letter "c": ')
     choice_d = input('Enter choice letter "d": ')
-    answer = input('Enter the correct answer: ')
-
+    
+    answer = ''
+    while answer not in ['a', 'b', 'c', 'd']:
+        answer = input('Enter the letter of the correct answer: ')
+    
     file_1.write(f'Q: {question}\n')
     file_1.write(f'a.) {choice_a}\n')
     file_1.write(f'b.) {choice_b}\n')
