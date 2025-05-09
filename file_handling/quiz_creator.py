@@ -1,4 +1,12 @@
-file_1 = open('file_1.txt', 'w')
+confirmation = input('Create a new set of question? Yes(new set) No(append questions): ').lower()
+if confirmation == "yes":
+    file_1 = open('file_1.txt', 'w')
+elif confirmation == "no":
+    file_1 = open('file_1.txt', 'a')
+else:
+    print('Please try again.')
+    exit()
+
 while True:
     question = input('Enter question or type "exit" to stop: ')
     if question.lower() == 'exit':
