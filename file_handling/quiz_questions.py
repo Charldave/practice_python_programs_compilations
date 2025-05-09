@@ -5,8 +5,23 @@ with open('file_1.txt', 'r') as file_1:
 
 question_list = []
 for i in range(0, len(lines), 6):
-    question = lines[i:i+6]
-    if len(question) == 6:
-        question_list.append(question)
+    set = lines[i:i+6]
+    if len(set) == 6:
+        question_list.append(set)
 
 random.shuffle(question_list)
+
+for set in question_list:
+    question = set[0].strip()
+    a = set[1].strip()
+    b = set[2].strip()
+    c = set[3].strip()
+    d = set[4].strip()
+    answer = set[5].strip().split(')')[1].strip()
+
+    print(f"\n{question}")
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+    
