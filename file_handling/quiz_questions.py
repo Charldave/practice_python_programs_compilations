@@ -25,3 +25,9 @@ for set in question_list:
     print(c)
     print(d)
     
+    user_answer = input("Pick your answer (a/b/c/d): ").lower()
+
+    if user_answer == answer:
+        print("Correct!")
+    else:
+        print(f"Wrong. Correct answer is ({answer})")
