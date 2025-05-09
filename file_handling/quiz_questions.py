@@ -11,6 +11,8 @@ for i in range(0, len(lines), 6):
 
 random.shuffle(question_list)
 
+score = 0
+
 for set in question_list:
     question = set[0].strip()
     a = set[1].strip()
@@ -29,5 +31,8 @@ for set in question_list:
 
     if user_answer == answer:
         print("Correct!")
+        score += 1
     else:
         print(f"Wrong. Correct answer is ({answer})")
+
+print(f"\nQuiz complete! Your score: {score}/{len(question_list)}")
